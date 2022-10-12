@@ -65,6 +65,9 @@ main {
   font-size: 1.2rem;
   font-family: 'Karla', sans-serif;
   cursor: pointer;
+  
+  padding-top: 15px;
+  text-align: center;
 }
 
 .roll-dice:focus {
@@ -73,4 +76,23 @@ main {
 
 .roll-dice:active {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.fourth-face .column {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}.dice {  
+  padding: 4px;  
+  background-color: #5035FF;  
+  width: 77px;  
+  /* height: 104px;   */
+  border-radius: 10%;
+}
+.dot {
+display: block;
+ width: 24px;
+ height: 24px;
+ border-radius: 50%;
+ background-color:white;
 }
