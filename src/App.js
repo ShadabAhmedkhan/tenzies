@@ -19,11 +19,11 @@ export default function App() {
         const firstValue = dice[0].value
         const allSameValue = dice.every(die => die.value === firstValue)
         if (allHeld && allSameValue) {
+            getMins(startTime)
             const shorTestTime = Math.min(...JSON.parse(localStorage.getItem("duration")))
             setBestTime("Here is Best Time ("+minsSec(shorTestTime).min + " : " + minsSec(shorTestTime).sec+")")
 
             setTenzies(true)
-            getMins(startTime)
         }
     }, [dice])
     function getMins(startTime){
